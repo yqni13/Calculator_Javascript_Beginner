@@ -88,7 +88,7 @@ i {                                 /*operational buttons*/
 
 /*----------- history -----------*/
 
-#history>a {                        /*title 'history'*/
+#history>a {                        /*title 'history'*/ 
     color: #80006A;
     font-weight: bold;
     font-size:20px;
