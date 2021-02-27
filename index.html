@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1f01e478b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="calc.js"></script>
+    <title>Calculator_by_Javascript</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="head">
+            <div class="title">
+                <h5>CALCULATOR yqni13.calc</h5>
+            </div>
+            <div class="img">
+                <img src="yqni13_logo_small.png" alt="yqni13_logo not found"/>
+                
+            </div>
+        </div>
+        <div>
+            <div class="result">
+                <p id="cur_res">0</p>
+            </div>
+            <div>
+                <input type="text" class="num_input" id="value1" placeholder="number1"/><br>
+                <input type="text" class="num_input" id="value2" placeholder="number2"/>
+            </div>
+            <div class="keyboard">
+                <i class="fas fa-plus" onclick="document.getElementById('cur_res').innerHTML=calculation('+');document.getElementById('total_res').innerHTML=calcHistory()"></i>
+                <i class="fas fa-minus" onclick="document.getElementById('cur_res').innerHTML=calculation('-');document.getElementById('total_res').innerHTML=calcHistory()"></i>
+                <i class="fas fa-asterisk" onclick="document.getElementById('cur_res').innerHTML=calculation('*');document.getElementById('total_res').innerHTML=calcHistory()"></i>
+                <i class="fas fa-divide" onclick="document.getElementById('cur_res').innerHTML=calculation('/');document.getElementById('total_res').innerHTML=calcHistory()"></i>
+                <i class="fas fa-backspace" onclick="document.getElementById('cur_res').innerHTML=0;document.getElementById('value1').value='';document.getElementById('value2').value=''"></i>
+            </div>
+        </div>
+        <div id="history">
+            <a>history:</a>
+            <p id="total_res"></p>
+            <i id="all_clear" class="fas fa-trash-alt" onclick="document.getElementById('total_res').innerHTML=clearHistory()"></i>
+        </div>
+    </div>
+        
+</body>
+</html>
+<!--Note: loaded script of Bootstrap in Head did add a padding by accident, but came in handy so I decided not to delete and keep it (do not forget to load footer-part if you want to make full use of Bootstrap)-->

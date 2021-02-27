@@ -1,0 +1,115 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    margin-top:50px;
+    margin-bottom: 50px;
+    background: #17324D;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    width:300px;
+    height:500px;
+    border-radius: 10px;
+    background-image: url(dark_pattern01.jpg);
+    background-size:90%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.head {
+    margin-bottom:20px;
+}
+
+.title {
+    float:left;
+    width:50%;
+    padding-top:25px;
+}
+
+h5 {
+    color: #80006A;
+    font-weight: bold;
+}
+
+.img {
+    padding-top:5px;
+    display: flex;
+    justify-content: right;
+    float:right;
+    width:50%;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+/*----------- input -----------*/
+
+.result {                           /*display of current calculation*/
+    height: 75px;
+    background-color: #E6FBFF;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+#cur_res {
+    margin-top:-5px;
+    padding-top:29px;
+}
+
+.num_input {
+    box-sizing: border-box;
+    width:100%;
+    padding-right:15px;
+    text-align: right;
+    background-color: #E6FBFF;
+    border-color: #E6FBFF;
+}
+
+.keyboard>i {                       /*assigning space in between operators*/
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+i {                                 /*operational buttons*/
+    size: 100px;
+    color: #FF6680;
+}
+
+/*----------- history -----------*/
+
+#history>a {                        /*title 'history'*/
+    color: #80006A;
+    font-weight: bold;
+    font-size:20px;
+}
+
+#total_res {                        /*display of calculation history*/
+    background-color: #E6FBFF;
+    border-width: 10px;
+    height: 150px;
+    width: 100%;
+    box-sizing:border-box;
+    overflow:auto;
+    padding-top: 7px;
+}
+
+p {
+    text-align: right;
+    padding-right:5px;
+}
+
+#all_clear {                        /*delete-symbol for history*/
+    padding-left: 46.5%;
+    margin-bottom: 10px;
+}
