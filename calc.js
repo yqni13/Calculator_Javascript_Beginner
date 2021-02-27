@@ -18,7 +18,7 @@ function calculation (operator) {
     let number2 = Number(document.getElementById("value2").value);
     let result = 0;
     if (isNaN(number1) || isNaN(number2)) {
-        alert("calculation can only operate with numbers!");
+        alert("calculator can only operate with numbers!");
         return 0;
     }
     switch (operator) {
