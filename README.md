@@ -9,6 +9,7 @@ First project with javascript as a computer-science student
   - input panels 1 and 2 (number1, number2) get a number (if there is no input, value 0 is assumed)
   - choose operator ('+', '-', '*', '/') and the result will dispaly on first screen and in history-screen below
   - you get a warning if input is not a number, or trying to divide by 0
+  - backspace-key clears input-screen and trash-key clears history
 
 # Used Technology?
   - HTML (basic)
